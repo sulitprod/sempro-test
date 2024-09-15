@@ -1,0 +1,47 @@
+.button {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 15px;
+  white-space: nowrap;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  border: none;
+  padding: {
+    top: 18px;
+    bottom: 18px;
+  }
+
+  &.hoverEffect {
+    &:hover > div > p {
+      transform: translateY(-100%);
+    }
+  }
+
+  &.primary {
+    background-color: #2f80ed;
+    border-radius: 999px;
+    transition: ease-in-out 0.2s;
+    transition-property: background-color;
+    color: white;
+    padding: {
+      left: 26px;
+      right: 26px;
+    }
+
+    &:hover {
+      background-color: #1f6ed9;
+    }
+  }
+
+  &.secondary {
+    background-color: transparent;
+    transition: ease-in-out 0.2s;
+    transition-property: color;
+    color: #2f80ed;
+
+    &:hover {
+      color: #1f6ed9;
+    }
+  }
+}

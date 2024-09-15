@@ -1,0 +1,16 @@
+.hoverText {
+  overflow: hidden;
+
+  > p {
+    position: relative;
+    transition: ease-in-out 0.2s;
+    transition-property: transform;
+
+    & .secondary {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+  }
+}

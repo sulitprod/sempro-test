@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  & > .content {
+    padding: {
+      top: 50px;
+      bottom: 50px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & > div {
+      line-height: 140%;
+      font-size: 26px;
+      color: #2f80ed;
+    }
+
+    & > svg {
+      height: 137px;
+      width: auto;
+    }
+  }
+
+  & .headerPano {
+    width: 100%;
+    height: auto;
+  }
+}

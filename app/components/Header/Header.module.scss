@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background: white;
+  z-index: 10;
+  top: 0;
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  }
+
+  & > svg {
+    height: 30px;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  & > .right p {
+    font-size: 17px;
+  }
+
+  & .select svg {
+    width: 14px;
+  }
+}

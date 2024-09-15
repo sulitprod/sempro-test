@@ -1,0 +1,57 @@
+.buttonBlock {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .text {
+    flex-shrink: 0;
+    font-size: 18px;
+    position: relative;
+
+    .duration {
+      opacity: 50%;
+      text-transform: initial;
+      position: absolute;
+      top: 100%;
+    }
+  }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    opacity: 50%;
+  }
+
+  .videoButton {
+    background-color: none;
+    display: flex;
+    cursor: pointer;
+    gap: 6px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 999px;
+    width: 240px;
+    height: 240px;
+    border: none;
+    position: relative;
+    background-image: url("/video-button.png");
+    background-size: cover;
+    text-transform: uppercase;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+
+    svg {
+      width: 13px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: inherit;
+      inset: 50px;
+      border: 1px solid white;
+    }
+  }
+}

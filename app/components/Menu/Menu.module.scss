@@ -1,0 +1,18 @@
+.menu {
+  svg {
+    width: 38px;
+    overflow: visible;
+  }
+
+  &:hover svg {
+    rect {
+      transition: ease-in-out 0.2s;
+    }
+    rect:nth-child(1) {
+      transform: translateY(-2px);
+    }
+    rect:nth-child(3) {
+      transform: translateY(2px);
+    }
+  }
+}

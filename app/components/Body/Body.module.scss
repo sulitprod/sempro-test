@@ -1,0 +1,72 @@
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 80px;
+
+  > .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 17px;
+    color: #2f80ed;
+    gap: 35px;
+    margin-right: 145px;
+
+    > p {
+      line-height: 140%;
+    }
+
+    .image {
+      position: relative;
+
+      & > .inlineLogo {
+        background: #2f80ed;
+        border-radius: 999px;
+        width: 259px;
+        height: 259px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-50%);
+        left: 100%;
+        top: 13%;
+        position: absolute;
+
+        & > svg {
+          height: 88px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  > .right {
+    padding: {
+      left: 145px;
+      right: 145px;
+    }
+
+    .square {
+      background: #2f80ed;
+      border-radius: 2px;
+      width: 63px;
+      height: 12px;
+      margin-bottom: 65px;
+    }
+
+    & > .mainText {
+      font-size: 34px;
+      margin-bottom: 120px;
+    }
+
+    & > .secondaryText {
+      font-size: 20px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.blue {
+  color: #2f80ed;
+}
